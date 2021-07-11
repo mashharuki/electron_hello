@@ -28,9 +28,11 @@ const externalPlugins = new webpack.ExternalsPlugin('commonjs', [
 
 module.exports = {
   entry: {
+    // ビルドするファイル
     index: path.join(__dirname, 'src', 'index.js')
   },
   output: {
+    // ビルド後の出力ファイル
     path: path.join(__dirname, 'out'),
     filename: '[name].js'
   },
